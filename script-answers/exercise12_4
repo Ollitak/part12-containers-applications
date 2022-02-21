@@ -1,0 +1,169 @@
+Script started on 2022-02-21 15:12:19+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="106" LINES="84"]
+]0;ollita@DESKTOP-G80022C: ~/code_projects/docker-exercises/part12-containers-applications/script-answers[01;32mollita@DESKTOP-G80022C[00m:[01;34m~/code_projects/docker-exercises/part12-containers-applications/script-answers[00m$ exit[A]0;ollita@DESKTOP-G80022C: ~/code_projects/docker-exercises/part12-containers-applications/script-answers[01;32mollita@DESKTOP-G80022C[00m:[01;34m~/code_projects/docker-exercises/part12-containers-applications/script-answers[00m$ docker start -i focused_snyder [C[C[C[C[9Pcontainer ls -a[A]0;ollita@DESKTOP-G80022C: ~/code_projects/docker-exercises/part12-containers-applications/script-answers[01;32mollita@DESKTOP-G80022C[00m:[01;34m~/code_projects/docker-exercises/part12-containers-applications/script-answers[00m$ exit[K[A]0;ollita@DESKTOP-G80022C: ~/code_projects/docker-exercises/part12-containers-applications/script-answers[01;32mollita@DESKTOP-G80022C[00m:[01;34m~/code_projects/docker-exercises/part12-containers-applications/script-answers[00m$ docker container ls -a[C[C[C[Cstart -i focused_snyder 
+]0;root@8ff618e609e2: /root@8ff618e609e2:/# [K]0;root@8ff618e609e2: /root@8ff618e609e2:/# inde    nodd e
+bash: node: command not found
+]0;root@8ff618e609e2: /root@8ff618e609e2:/# apt instal      install nodejs
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 6%Reading package lists... 6%Reading package lists... 6%Reading package lists... 6%Reading package lists... 61%Reading package lists... 61%Reading package lists... 62%Reading package lists... 62%Reading package lists... 71%Reading package lists... 71%Reading package lists... 76%Reading package lists... 76%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 82%Reading package lists... 90%Reading package lists... 90%Reading package lists... 95%Reading package lists... 95%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 51%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  ca-certificates libc-ares2 libicu66 libnghttp2-14 libnode64 libssl1.1 libuv1 nodejs-doc openssl tzdata
+Suggested packages:
+  npm
+The following NEW packages will be installed:
+  ca-certificates libc-ares2 libicu66 libnghttp2-14 libnode64 libssl1.1 libuv1 nodejs nodejs-doc openssl
+  tzdata
+0 upgraded, 11 newly installed, 0 to remove and 10 not upgraded.
+Need to get 17.9 MB of archives.
+After this operation, 74.6 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+[33m0% [Working][0m            Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libssl1.1 amd64 1.1.1f-1ubuntu2.10 [1322 kB]
+[33m0% [1 libssl1.1 4095 B/1322 kB 0%][0m[33m3% [1 libssl1.1 718 kB/1322 kB 54%][0m[33m                                   8% [Working][0m            Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openssl amd64 1.1.1f-1ubuntu2.10 [620 kB]
+[33m8% [2 openssl 2637 B/620 kB 0%][0m[33m                               12% [Waiting for headers][0m                         Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 ca-certificates all 20210119~20.04.2 [145 kB]
+[33m12% [3 ca-certificates 3898 B/145 kB 3%][0m[33m                                        15% [Waiting for headers][0m                         Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 tzdata all 2021e-0ubuntu0.20.04 [295 kB]
+[33m15% [4 tzdata 1387 B/295 kB 0%][0m[33m                               18% [Waiting for headers][0m                         Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu66 amd64 66.1-2ubuntu2.1 [8515 kB]
+[33m18% [5 libicu66 8192 B/8515 kB 0%][0m[33m20% [5 libicu66 568 kB/8515 kB 7%][0m[33m24% [5 libicu66 1248 kB/8515 kB 15%][0m[33m27% [5 libicu66 1955 kB/8515 kB 23%][0m[33m29% [5 libicu66 2533 kB/8515 kB 30%][0m[33m32% [5 libicu66 3123 kB/8515 kB 37%][0m[33m34% [5 libicu66 3581 kB/8515 kB 42%][0m[33m36% [5 libicu66 3932 kB/8515 kB 46%][0m[33m39% [5 libicu66 4602 kB/8515 kB 54%][0m[33m42% [5 libicu66 5345 kB/8515 kB 63%]                                                         1228 kB/s 8s[0m[33m45% [5 libicu66 6057 kB/8515 kB 71%]                                                         1228 kB/s 7s[0m[33m48% [5 libicu66 6730 kB/8515 kB 79%]                                                         1228 kB/s 7s[0m[33m49% [5 libicu66 6917 kB/8515 kB 81%]                                                         1228 kB/s 6s[0m[33m52% [5 libicu66 7615 kB/8515 kB 89%]                                                         1228 kB/s 6s[0m[33m55% [5 libicu66 8274 kB/8515 kB 97%]                                                         1228 kB/s 5s[0m[33m58% [Waiting for headers]                                                                    1228 kB/s 5s[0m                                                                                                         Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libuv1 amd64 1.34.2-1ubuntu1.3 [80.8 kB]
+[33m58% [6 libuv1 272 B/80.8 kB 0%]                                                              1228 kB/s 5s[0m[33m60% [Waiting for headers]                                                                    1228 kB/s 5s[0m                                                                                                         Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 libnghttp2-14 amd64 1.40.0-1build1 [78.7 kB]
+[33m60% [7 libnghttp2-14 998 B/78.7 kB 1%]                                                       1228 kB/s 5s[0m[33m62% [Waiting for headers]                                                                    1228 kB/s 5s[0m                                                                                                         Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libc-ares2 amd64 1.15.0-1ubuntu0.1 [38.2 kB]
+[33m62% [8 libc-ares2 869 B/38.2 kB 2%]                                                          1228 kB/s 5s[0m[33m64% [Working]                                                                                1228 kB/s 5s[0m                                                                                                         Get:9 http://archive.ubuntu.com/ubuntu focal/universe amd64 libnode64 amd64 10.19.0~dfsg-3ubuntu1 [5765 kB]
+[33m64% [9 libnode64 12.0 kB/5765 kB 0%]                                                         1228 kB/s 5s[0m[33m68% [9 libnode64 754 kB/5765 kB 13%]                                                         1228 kB/s 4s[0m[33m71% [9 libnode64 1473 kB/5765 kB 26%]                                                        1228 kB/s 4s[0m[33m74% [9 libnode64 2237 kB/5765 kB 39%]                                                        1228 kB/s 3s[0m[33m78% [9 libnode64 3066 kB/5765 kB 53%]                                                        1228 kB/s 3s[0m[33m81% [9 libnode64 3720 kB/5765 kB 65%]                                                        1228 kB/s 2s[0m[33m83% [9 libnode64 4242 kB/5765 kB 74%]                                                        1228 kB/s 2s[0m[33m86% [9 libnode64 4834 kB/5765 kB 84%]                                                        1298 kB/s 1s[0m[33m89% [9 libnode64 5637 kB/5765 kB 98%]                                                        1298 kB/s 0s[0m[33m92% [Waiting for headers]                                                                    1298 kB/s 0s[0m                                                                                                         Get:10 http://archive.ubuntu.com/ubuntu focal/universe amd64 nodejs-doc all 10.19.0~dfsg-3ubuntu1 [942 kB]
+[33m92% [10 nodejs-doc 4565 B/942 kB 0%]                                                         1298 kB/s 0s[0m[33m96% [10 nodejs-doc 813 kB/942 kB 86%]                                                        1298 kB/s 0s[0m[33m98% [Waiting for headers]                                                                    1298 kB/s 0s[0m                                                                                                         Get:11 http://archive.ubuntu.com/ubuntu focal/universe amd64 nodejs amd64 10.19.0~dfsg-3ubuntu1 [61.1 kB]
+[33m98% [11 nodejs 2324 B/61.1 kB 4%]                                                            1298 kB/s 0s[0m[33m100% [Working]                                                                               1298 kB/s 0s[0m                                                                                                         Fetched 17.9 MB in 14s (1289 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;83r8[1ASelecting previously unselected package libssl1.1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4194 files and directories currently installed.)
+Preparing to unpack .../00-libssl1.1_1.1.1f-1ubuntu2.10_amd64.deb ...
+7[84;0f[42m[30mProgress: [  0%][49m[39m [....................................................................................] 87[84;0f[42m[30mProgress: [  2%][49m[39m [#...................................................................................] 8Unpacking libssl1.1:amd64 (1.1.1f-1ubuntu2.10) ...
+7[84;0f[42m[30mProgress: [  4%][49m[39m [###.................................................................................] 8Selecting previously unselected package openssl.
+Preparing to unpack .../01-openssl_1.1.1f-1ubuntu2.10_amd64.deb ...
+7[84;0f[42m[30mProgress: [  7%][49m[39m [#####...............................................................................] 8Unpacking openssl (1.1.1f-1ubuntu2.10) ...
+7[84;0f[42m[30mProgress: [  9%][49m[39m [#######.............................................................................] 8Selecting previously unselected package ca-certificates.
+Preparing to unpack .../02-ca-certificates_20210119~20.04.2_all.deb ...
+7[84;0f[42m[30mProgress: [ 11%][49m[39m [#########...........................................................................] 8Unpacking ca-certificates (20210119~20.04.2) ...
+7[84;0f[42m[30mProgress: [ 13%][49m[39m [###########.........................................................................] 8Selecting previously unselected package tzdata.
+Preparing to unpack .../03-tzdata_2021e-0ubuntu0.20.04_all.deb ...
+7[84;0f[42m[30mProgress: [ 16%][49m[39m [#############.......................................................................] 8Unpacking tzdata (2021e-0ubuntu0.20.04) ...
+7[84;0f[42m[30mProgress: [ 18%][49m[39m [##############......................................................................] 8Selecting previously unselected package libicu66:amd64.
+Preparing to unpack .../04-libicu66_66.1-2ubuntu2.1_amd64.deb ...
+7[84;0f[42m[30mProgress: [ 20%][49m[39m [################....................................................................] 8Unpacking libicu66:amd64 (66.1-2ubuntu2.1) ...
+7[84;0f[42m[30mProgress: [ 22%][49m[39m [##################..................................................................] 8Selecting previously unselected package libuv1:amd64.
+Preparing to unpack .../05-libuv1_1.34.2-1ubuntu1.3_amd64.deb ...
+7[84;0f[42m[30mProgress: [ 24%][49m[39m [####################................................................................] 8Unpacking libuv1:amd64 (1.34.2-1ubuntu1.3) ...
+7[84;0f[42m[30mProgress: [ 27%][49m[39m [######################..............................................................] 8Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../06-libnghttp2-14_1.40.0-1build1_amd64.deb ...
+7[84;0f[42m[30mProgress: [ 29%][49m[39m [########################............................................................] 8Unpacking libnghttp2-14:amd64 (1.40.0-1build1) ...
+7[84;0f[42m[30mProgress: [ 31%][49m[39m [##########################..........................................................] 8Selecting previously unselected package libc-ares2:amd64.
+Preparing to unpack .../07-libc-ares2_1.15.0-1ubuntu0.1_amd64.deb ...
+7[84;0f[42m[30mProgress: [ 33%][49m[39m [###########################.........................................................] 8Unpacking libc-ares2:amd64 (1.15.0-1ubuntu0.1) ...
+7[84;0f[42m[30mProgress: [ 36%][49m[39m [#############################.......................................................] 8Selecting previously unselected package libnode64:amd64.
+Preparing to unpack .../08-libnode64_10.19.0~dfsg-3ubuntu1_amd64.deb ...
+7[84;0f[42m[30mProgress: [ 38%][49m[39m [###############################.....................................................] 8Unpacking libnode64:amd64 (10.19.0~dfsg-3ubuntu1) ...
+7[84;0f[42m[30mProgress: [ 40%][49m[39m [#################################...................................................] 8Selecting previously unselected package nodejs-doc.
+Preparing to unpack .../09-nodejs-doc_10.19.0~dfsg-3ubuntu1_all.deb ...
+7[84;0f[42m[30mProgress: [ 42%][49m[39m [###################################.................................................] 8Unpacking nodejs-doc (10.19.0~dfsg-3ubuntu1) ...
+7[84;0f[42m[30mProgress: [ 44%][49m[39m [#####################################...............................................] 8Selecting previously unselected package nodejs.
+Preparing to unpack .../10-nodejs_10.19.0~dfsg-3ubuntu1_amd64.deb ...
+7[84;0f[42m[30mProgress: [ 47%][49m[39m [#######################################.............................................] 8Unpacking nodejs (10.19.0~dfsg-3ubuntu1) ...
+7[84;0f[42m[30mProgress: [ 49%][49m[39m [#########################################...........................................] 8Setting up libssl1.1:amd64 (1.1.1f-1ubuntu2.10) ...
+7[84;0f[42m[30mProgress: [ 51%][49m[39m [##########################################..........................................] 8debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.30.0 /usr/local/share/perl/5.30.0 /usr/lib/x86_64-linux-gnu/perl5/5.30 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.30 /usr/share/perl/5.30 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+7[84;0f[42m[30mProgress: [ 53%][49m[39m [############################################........................................] 8Setting up libnghttp2-14:amd64 (1.40.0-1build1) ...
+7[84;0f[42m[30mProgress: [ 56%][49m[39m [##############################################......................................] 87[84;0f[42m[30mProgress: [ 58%][49m[39m [################################################....................................] 8Setting up libc-ares2:amd64 (1.15.0-1ubuntu0.1) ...
+7[84;0f[42m[30mProgress: [ 60%][49m[39m [##################################################..................................] 87[84;0f[42m[30mProgress: [ 62%][49m[39m [####################################################................................] 8Setting up tzdata (2021e-0ubuntu0.20.04) ...
+7[84;0f[42m[30mProgress: [ 64%][49m[39m [######################################################..............................] 8debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.30.0 /usr/local/share/perl/5.30.0 /usr/lib/x86_64-linux-gnu/perl5/5.30 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.30 /usr/share/perl/5.30 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Configuring tzdata
+------------------
+
+Please select the geographic area in which you live. Subsequent configuration questions will narrow this
+down by presenting a list of cities, representing the time zones in which they are located.
+
+  1. Africa   3. Antarctica  5. Arctic  7. Atlantic  9. Indian    11. SystemV  13. Etc
+  2. America  4. Australia   6. Asia    8. Europe    10. Pacific  12. US
+Geographic area: ^X  8
+
+Please select the city or region corresponding to your time zone.
+
+  1. Amsterdam   12. Busingen     23. Kiev        34. Moscow      45. Saratov     56. Vatican
+  2. Andorra     13. Chisinau     24. Kirov       35. Nicosia     46. Simferopol  57. Vienna
+  3. Astrakhan   14. Copenhagen   25. Lisbon      36. Oslo        47. Skopje      58. Vilnius
+  4. Athens      15. Dublin       26. Ljubljana   37. Paris       48. Sofia       59. Volgograd
+  5. Belfast     16. Gibraltar    27. London      38. Podgorica   49. Stockholm   60. Warsaw
+  6. Belgrade    17. Guernsey     28. Luxembourg  39. Prague      50. Tallinn     61. Zagreb
+  7. Berlin      18. Helsinki     29. Madrid      40. Riga        51. Tirane      62. Zaporozhye
+  8. Bratislava  19. Isle_of_Man  30. Malta       41. Rome        52. Tiraspol    63. Zurich
+  9. Brussels    20. Istanbul     31. Mariehamn   42. Samara      53. Ulyanovsk
+  10. Bucharest  21. Jersey       32. Minsk       43. San_Marino  54. Uzhgorod
+  11. Budapest   22. Kaliningrad  33. Monaco      44. Sarajevo    55. Vaduz
+Time zone: q 17 8
+
+
+Current default time zone: 'Europe/Helsinki'
+Local time is now:      Mon Feb 21 15:15:02 EET 2022.
+Universal Time is now:  Mon Feb 21 13:15:02 UTC 2022.
+Run 'dpkg-reconfigure tzdata' if you wish to change it.
+
+7[84;0f[42m[30mProgress: [ 67%][49m[39m [#######################################################.............................] 8Setting up libuv1:amd64 (1.34.2-1ubuntu1.3) ...
+7[84;0f[42m[30mProgress: [ 69%][49m[39m [#########################################################...........................] 87[84;0f[42m[30mProgress: [ 71%][49m[39m [###########################################################.........................] 8Setting up nodejs-doc (10.19.0~dfsg-3ubuntu1) ...
+7[84;0f[42m[30mProgress: [ 73%][49m[39m [#############################################################.......................] 87[84;0f[42m[30mProgress: [ 76%][49m[39m [###############################################################.....................] 8Setting up openssl (1.1.1f-1ubuntu2.10) ...
+7[84;0f[42m[30mProgress: [ 78%][49m[39m [#################################################################...................] 87[84;0f[42m[30mProgress: [ 80%][49m[39m [###################################################################.................] 8Setting up libicu66:amd64 (66.1-2ubuntu2.1) ...
+7[84;0f[42m[30mProgress: [ 82%][49m[39m [#####################################################################...............] 87[84;0f[42m[30mProgress: [ 84%][49m[39m [######################################################################..............] 8Setting up ca-certificates (20210119~20.04.2) ...
+7[84;0f[42m[30mProgress: [ 87%][49m[39m [########################################################################............] 8debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.30.0 /usr/local/share/perl/5.30.0 /usr/lib/x86_64-linux-gnu/perl5/5.30 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.30 /usr/share/perl/5.30 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Updating certificates in /etc/ssl/certs...
+128 added, 0 removed; done.
+7[84;0f[42m[30mProgress: [ 89%][49m[39m [##########################################################################..........] 8Setting up libnode64:amd64 (10.19.0~dfsg-3ubuntu1) ...
+7[84;0f[42m[30mProgress: [ 89%][49m[39m [###########################################################################.........] 8Setting up nodejs (10.19.0~dfsg-3ubuntu1) ...
+7[84;0f[42m[30mProgress: [ 91%][49m[39m [############################################################################........] 8update-alternatives: using /usr/bin/nodejs to provide /usr/bin/js (js) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/js.1.gz because associated file /usr/share/man/man1/nodejs.1.gz (of link group js) doesn't exist
+7[84;0f[42m[30mProgress: [ 94%][49m[39m [##############################################################################......] 8Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+Processing triggers for ca-certificates (20210119~20.04.2) ...
+7[84;0f[42m[30mProgress: [ 96%][49m[39m [################################################################################....] 8Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+7[84;0f[42m[30mProgress: [ 98%][49m[39m [##################################################################################..] 8
+7[0;84r8[1A[J[1;33mW: [0mOperation was interrupted before it could finish[0m
+]0;root@8ff618e609e2: /root@8ff618e609e2:/# node
+[1G[0J> [3G
+(To exit, press ^C again or type .exit)
+[1G[0J> [3G
+]0;root@8ff618e609e2: /root@8ff618e609e2:/# node -v
+v10.19.0
+]0;root@8ff618e609e2: /root@8ff618e609e2:/# no  node /usr/src/app/index.js
+/usr/src/app/index.js:1
+console.log("Hello World!)
+            ^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+]0;root@8ff618e609e2: /root@8ff618e609e2:/# [Knode /usr/src/app/index.jse[1P[1P[1P[1P[1@n[1@a[1@o[1P[1@n[1@o
+[?2004h[?1049h[22;0;0t[1;84r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[82;47H(B[0;7m[ Reading... ](B[m[82;46H(B[0;7m[ Read 1 line ](B[m[H(B[0;7m  GNU nano 4.8                              /usr/src/app/index.js                                         [1;105H(B[m[83d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[84d(B[0;7m^X(B[m Exit[84;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[82d[2d[39;49m(B[mconsole.log("Hello World!)[?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25ls[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l.[?12l[?25h[?25ll[?12l[?25h[?25lo[?12l[?25h[?25lg[?12l[?25h[?25l([?12l[?25h[?25l"[?12l[?25h[?25lH[?12l[?25h[?25le[?12l[?25h[?25ll[?12l[?25h[?25ll[?12l[?25h[?25lo[?12l[?25h[?25l [?12l[?25h[?25lW[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25ll[?12l[?25h[?25ld[?12l[?25h[?25l![?12l[?25h[?25l[1;97H(B[0;7mModified[82d(B[m[K[1;105H[2;13H(B[0;1m[35m"Hello World!"[39m(B[m)[?12l[?25h[?25l[82;47H(B[0;7m[ Writing... ](B[m[1;97H(B[0;7m        (B[m[82;46H(B[0;7m[ Wrote 1 line ](B[m[2;27H[?12l[?25h[?25l[82d[J[84d[?12l[?25h[84;1H[?1049l[23;0;0t[?1l>[?2004l]0;root@8ff618e609e2: /root@8ff618e609e2:/# [Knano /usr/src/app/index.jsode /usr/src/app/index.js
+Hello World!
+]0;root@8ff618e609e2: /root@8ff618e609e2:/# [Kexit
+exit
+ex]0;ollita@DESKTOP-G80022C: ~/code_projects/docker-exercises/part12-containers-applications/script-answers[01;32mollita@DESKTOP-G80022C[00m:[01;34m~/code_projects/docker-exercises/part12-containers-applications/script-answers[00m$ exi t[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Kexi t
+exit
+
+Script done on 2022-02-21 15:16:08+02:00 [COMMAND_EXIT_CODE="0"]

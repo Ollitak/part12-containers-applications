@@ -1,0 +1,48 @@
+Script started on 2022-02-21 13:48:27+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="106" LINES="84"]
+]0;ollita@DESKTOP-G80022C: ~/code_projects/docker-exercises[01;32mollita@DESKTOP-G80022C[00m:[01;34m~/code_projects/docker-exercises[00m$ exit[K[K[K[Kdocker run -it ubuntu bash
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2K08c01a0ec47e: Pulling fs layer [1B[1A[2K08c01a0ec47e: Downloading  285.9kB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  870.8kB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  1.756MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading   2.05MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  2.927MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  3.808MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  4.389MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  4.971MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  5.847MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  6.724MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  7.306MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  8.194MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  8.784MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  9.378MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  9.972MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  10.55MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  11.43MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  12.02MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  12.61MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  13.49MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  14.08MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  14.97MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  15.85MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  16.44MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  17.02MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading   17.9MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  18.78MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  19.66MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  20.54MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  21.13MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading     22MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  22.88MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  23.47MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  24.34MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  24.93MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  25.53MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  26.12MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading     27MB/28.56MB[1B[1A[2K08c01a0ec47e: Downloading  27.89MB/28.56MB[1B[1A[2K08c01a0ec47e: Verifying Checksum [1B[1A[2K08c01a0ec47e: Download complete [1B[1A[2K08c01a0ec47e: Extracting  294.9kB/28.56MB[1B[1A[2K08c01a0ec47e: Extracting  2.949MB/28.56MB[1B[1A[2K08c01a0ec47e: Extracting  5.898MB/28.56MB[1B[1A[2K08c01a0ec47e: Extracting  8.552MB/28.56MB[1B[1A[2K08c01a0ec47e: Extracting  10.91MB/28.56MB[1B[1A[2K08c01a0ec47e: Extracting  13.86MB/28.56MB[1B[1A[2K08c01a0ec47e: Extracting   17.1MB/28.56MB[1B[1A[2K08c01a0ec47e: Extracting  20.35MB/28.56MB[1B[1A[2K08c01a0ec47e: Extracting   23.3MB/28.56MB[1B[1A[2K08c01a0ec47e: Extracting  24.48MB/28.56MB[1B[1A[2K08c01a0ec47e: Extracting  27.13MB/28.56MB[1B[1A[2K08c01a0ec47e: Extracting  28.56MB/28.56MB[1B[1A[2K08c01a0ec47e: Pull complete [1BDigest: sha256:669e010b58baf5beb2836b253c1fd5768333f0d1dbcb834f7c07a4dc93f474be
+Status: Downloaded newer image for ubuntu:latest
+]0;root@8ff618e609e2: /root@8ff618e609e2:/# [K]0;root@8ff618e609e2: /root@8ff618e609e2:/# mkri  dir       ls
+[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;36mlib32[0m  [01;36mlibx32[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m  [30;42mtmp[0m  [01;34mvar[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;36mlib64[0m  [01;34mmedia[0m   [01;34mopt[0m  [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+]0;root@8ff618e609e2: /root@8ff618e609e2:/# pwd
+/
+]0;root@8ff618e609e2: /root@8ff618e609e2:/# cd
+]0;root@8ff618e609e2: ~root@8ff618e609e2:~# pwd
+/root
+]0;root@8ff618e609e2: ~root@8ff618e609e2:~# cd & /
+]0;root@8ff618e609e2: /root@8ff618e609e2:/# pwd
+/
+]0;root@8ff618e609e2: /root@8ff618e609e2:/# cd  cd mnt/
+]0;root@8ff618e609e2: /mntroot@8ff618e609e2:/mnt# c ls
+]0;root@8ff618e609e2: /mntroot@8ff618e609e2:/mnt# ls
+]0;root@8ff618e609e2: /mntroot@8ff618e609e2:/mnt# cd c    cd ..
+]0;root@8ff618e609e2: /root@8ff618e609e2:/# m ls
+[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;36mlib32[0m  [01;36mlibx32[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m  [30;42mtmp[0m  [01;34mvar[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;36mlib64[0m  [01;34mmedia[0m   [01;34mopt[0m  [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+]0;root@8ff618e609e2: /root@8ff618e609e2:/# cd usr/
+]0;root@8ff618e609e2: /usrroot@8ff618e609e2:/usr# ls
+[0m[01;34mbin[0m  [01;34mgames[0m  [01;34minclude[0m  [01;34mlib[0m  [01;34mlib32[0m  [01;34mlib64[0m  [01;34mlibx32[0m  [01;34mlocal[0m  [01;34msbin[0m  [01;34mshare[0m  [01;34msrc[0m
+]0;root@8ff618e609e2: /usrroot@8ff618e609e2:/usr# cd ..
+]0;root@8ff618e609e2: /root@8ff618e609e2:/# mk  pwd
+/
+]0;root@8ff618e609e2: /root@8ff618e609e2:/# mkr dir /user  r/( r ser  srtc    rc/app
+]0;root@8ff618e609e2: /root@8ff618e609e2:/# cd usr/
+]0;root@8ff618e609e2: /usrroot@8ff618e609e2:/usr# ls
+[0m[01;34mbin[0m  [01;34mgames[0m  [01;34minclude[0m  [01;34mlib[0m  [01;34mlib32[0m  [01;34mlib64[0m  [01;34mlibx32[0m  [01;34mlocal[0m  [01;34msbin[0m  [01;34mshare[0m  [01;34msrc[0m
+]0;root@8ff618e609e2: /usrroot@8ff618e609e2:/usr# cd src/
+]0;root@8ff618e609e2: /usr/srcroot@8ff618e609e2:/usr/src# (arg: 1) [K6) ]0;root@8ff618e609e2: /usr/srcroot@8ff618e609e2:/usr/src# ssssss      ls
+[0m[01;34mapp[0m
+]0;root@8ff618e609e2: /usr/srcroot@8ff618e609e2:/usr/src# cd app/p
+bash: cd: app/p: No such file or directory
+]0;root@8ff618e609e2: /usr/srcroot@8ff618e609e2:/usr/src# cd app/p  
+]0;root@8ff618e609e2: /usr/src/approot@8ff618e609e2:/usr/src/app# m touych      touch (i    index.js
+]0;root@8ff618e609e2: /usr/src/approot@8ff618e609e2:/usr/src/app# eix   exit
+exit
+]0;ollita@DESKTOP-G80022C: ~/code_projects/docker-exercises[01;32mollita@DESKTOP-G80022C[00m:[01;34m~/code_projects/docker-exercises[00m$ w[Kwxi[K[K[Kexit
+exit
+
+Script done on 2022-02-21 13:53:39+02:00 [COMMAND_EXIT_CODE="0"]
