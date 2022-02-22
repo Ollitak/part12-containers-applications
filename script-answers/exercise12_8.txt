@@ -1,0 +1,141 @@
+Script started on 2022-02-22 18:02:06+02:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="80" LINES="30"]
+]0;ollita@DESKTOP-G80022C: ~/code_projects/docker-exercises/part12-containers-applications/todo-app/todo-backend[01;32mollita@DESKTOP-G80022C[00m:[01;34m~/code_projects/docker-exercises/part12-containers-applications/todo-app/todo-backend[00m$ exitdocker-compose -f docker-compose.dev.yml up
+[33mWARN[0m[0000] Found orphan containers ([todo-backend-app-1]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up. 
+[1A[1B[0G[?25l[+] Running 1/0
+[34m ⠿ Container todo-backend-mongo-1  Run...                                  0.0s
+[0m[?25hAttaching to todo-backend-mongo-1
+^X  ^CGracefully stopping... (press Ctrl+C again to force)
+[1A[1B[0G[?25l[+] Running 0/0
+[37m ⠋ Container todo-backend-mongo-1  Sto...                                  0.1s
+[0m[?25h[1A[1A[0G[?25l[+] Running 0/1
+[37m ⠙ Container todo-backend-mongo-1  Sto...                                  0.2s
+[0m[?25h[1A[1A[0G[?25l[+] Running 0/1
+[37m ⠹ Container todo-backend-mongo-1  Sto...                                  0.3s
+[0m[?25h[1A[1A[0G[?25l[+] Running 0/1
+[37m ⠸ Container todo-backend-mongo-1  Sto...                                  0.4s
+[0m[?25h[1A[1A[0G[?25l[+] Running 0/1
+[37m ⠼ Container todo-backend-mongo-1  Sto...                                  0.5s
+[0m[?25h[1A[1A[0G[?25l[+] Running 0/1
+[37m ⠴ Container todo-backend-mongo-1  Sto...                                  0.6s
+[0m[?25h[1A[1A[0G[?25l[+] Running 0/1
+[37m ⠦ Container todo-backend-mongo-1  Sto...                                  0.7s
+[0m[?25h[1A[1A[0G[?25l[34m[+] Running 1/1[0m
+[34m ⠿ Container todo-backend-mongo-1  Sto...                                  0.7s
+[0m[?25hcanceled
+]0;ollita@DESKTOP-G80022C: ~/code_projects/docker-exercises/part12-containers-applications/todo-app/todo-backend[01;32mollita@DESKTOP-G80022C[00m:[01;34m~/code_projects/docker-exercises/part12-containers-applications/todo-app/todo-backend[00m$ docker-compose -f docker-compose.dev.yml up[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kdocker-compose -f docker-compose.dev.yml up[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K[K[K[K[Kdocker exec todo-backend-mongo-1 [C[1@-[1@i[C[1@t[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C b a s g ¨+ [1P [1P [1P h 
+]0;root@7f547bfa825d: /root@7f547bfa825d:/# [K]0;root@7f547bfa825d: /root@7f547bfa825d:/# mongo
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("35c8c08a-1e23-4937-8cee-5f56348f2676") }
+MongoDB server version: 5.0.6
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+Welcome to the MongoDB shell.
+For interactive help, type "help".
+For more comprehensive documentation, see
+	https://docs.mongodb.com/
+Questions? Try the MongoDB Developer Community Forums
+	https://community.mongodb.com
+> show dvb[3G[Jshow dv[10G[3G[Jshow d[9Gbs[3G[Jshow dbs[11G
+> [3G[J[3G
+> show dbs[3G[Jshow dbs[11G
+> help[3G[Jhelp[7G
+	db.help()                    help on db methods
+	db.mycoll.help()             help on collection methods
+	sh.help()                    sharding helpers
+	rs.help()                    replica set helpers
+	help admin                   administrative help
+	help connect                 connecting to a db help
+	help keys                    key shortcuts
+	help misc                    misc things to know
+	help mr                      mapreduce
+
+	show dbs                     show database names
+	show collections             show collections in current database
+	show users                   show users in current database
+	show profile                 show most recent system.profile entries with time >= 1ms
+	show logs                    show the accessible logger names
+	show log [name]              prints out the last segment of log in memory, 'global' is default
+	use <db_name>                set current database
+	db.mycoll.find()             list objects in collection mycoll
+	db.mycoll.find( { a : 1 } )  list objects in mycoll where a == 1
+	it                           result of the last line evaluated; use to further iterate
+	DBQuery.shellBatchSize = x   set default number of items to display on shell
+	exit                         quit the mongo shell
+> show db[3G[Jshow db[10G
+uncaught exception: Error: don't know how to show [db] :
+shellHelper.show@src/mongo/shell/utils.js:1211:11
+shellHelper@src/mongo/shell/utils.js:838:15
+@(shellhelp2):1:1
+> show [3G[Jshow[7G[3G[Jsho[6G[3G[Jsh[5G[3G[Js[4G[3G[J[3Ghek[3G[Jhe[5Glp db[3G[Jhelp d[9G[3G[Jhelp [8Gshow[3G[Jhelp show[12G
+unknown help option
+> show f[3G[Jshow [8Gdbs[3G[Jshow dbs[11G
+> use the_database[3G[Juse the_database[19G
+switched to db the_database
+> show collections[3G[Jshow collections[19G
+Warning: unable to run listCollections, attempting to approximate collection names by parsing connectionStatus
+> [3G[J[3G^C
+bye
+]0;root@7f547bfa825d: /root@7f547bfa825d:/# mongo -u root - p  p example
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("13cba5e9-05f6-435f-bc8b-42ebd94bffe6") }
+MongoDB server version: 5.0.6
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting: 
+        2022-02-22T16:02:24.948+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+        2022-02-22T16:02:25.653+00:00: /sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'never'
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs[3G[Jshow dbs[11G
+admin         0.000GB
+config        0.000GB
+local         0.000GB
+the_database  0.000GB
+> use the_database[3G[Juse the_database[19G
+switched to db the_database
+> show collections[3G[Jshow collections[19G
+todos
+> db[3G[Jd[4G[3G[J[3Gdb.todos.find()[3G[Jdb.todos.find([17G[3G[Jdb.todos.find[16G({][3G[Jdb.todos.find({[18G})[3G[Jdb.todos.find({})[20G
+{ "_id" : ObjectId("6214dca0be8c3b52c4a69e80"), "text" : "upda2tetest", "done" : false }
+{ "_id" : ObjectId("6214dca0be8c3b52c4a69e81"), "text" : "Learn about containers", "done" : false }
+> db.col[3G[Jdb.co[8Gllection.iserO[3G[Jdb.collection.iser[21G[3G[Jdb.collection.ise[20G[3G[Jdb.collection.is[19G[3G[Jdb.collection.i[18GnsertOne(z[3G[Jdb.collection.insertOne([27G<document>,[3G[Jdb.collection.insertOne(<document>[37G[3G[Jdb.collection.insertOne(<document[36G[3G[Jdb.collection.insertOne(<documen[35G[3G[Jdb.collection.insertOne(<docume[34G[3G[Jdb.collection.insertOne(<docum[33G[3G[Jdb.collection.insertOne(<docu[32G[3G[Jdb.collection.insertOne(<doc[31G[3G[Jdb.collection.insertOne(<do[30G[3G[Jdb.collection.insertOne(<d[29G[3G[Jdb.collection.insertOne(<[28G[3G[Jdb.collection.insertOne([27G[3G[Jdb.collection.insertOne[26G[3G[Jdb.collection.insertOne[25G[3G[Jdb.collection.insertOne[24G[3G[Jdb.collection.insertOne[23G[3G[Jdb.collection.insertOne[22G[3G[Jdb.collection.insertOne[21G[3G[Jdb.collection.insertOne[20G[3G[Jdb.collection.insertOne[19G[3G[Jdb.collection.insertOne[18G[3G[Jdb.collection.insertOne[17G[3G[Jdb.collection.insertOne[16G[3G[Jdb.collectio.insertOne[15G[3G[Jdb.collecti.insertOne[14G[3G[Jdb.collect.insertOne[13G[3G[Jdb.collec.insertOne[12G[3G[Jdb.colle.insertOne[11G[3G[Jdb.coll.insertOne[10G[3G[Jdb.col.insertOne[9G[3G[Jdb.co.insertOne[8G[3G[Jdb.c.insertOne[7G[3G[Jdb..insertOne[6G[3G[Jdb.t.insertOne[7G[3G[Jdb.to.insertOne[8G[3G[Jdb.tod.insertOne[9G[3G[Jdb.todo.insertOne[10G[3G[Jdb.todos.insertOne[11G[3G[Jdb.todos.insertOne[12G[3G[Jdb.todos.insertOne[13G[3G[Jdb.todos.insertOne[14G[3G[Jdb.todos.insertOne[15G[3G[Jdb.todos.insertOne[16G[3G[Jdb.todos.insertOne[17G[3G[Jdb.todos.insertOne[18G[3G[Jdb.todos.insertOne[19G[3G[Jdb.todos.insertOne[20G[3G[Jdb.todos.insertOne[21G({text:"Increase the number of tools in my toolsbelt", done[3G[Jdb.todos.insertOne({text:"Increase the number of tools in my toolsbelt", done:
+[1G[1A[3G[Jdb.todos.insertOne({text:"Increase the number of tools in my toolsbelt", done: [2G[1A[3G[Jdb.todos.insertOne({text:"Increase the number of tools in my toolsbelt", done: f[3G[1A[3G[Jdb.todos.insertOne({text:"Increase the number of tools in my toolsbelt", done: fa[4G[1A[3G[Jdb.todos.insertOne({text:"Increase the number of tools in my toolsbelt", done: fas[5G[1A[3G[Jdb.todos.insertOne({text:"Increase the number of tools in my toolsbelt", done: fasl[6G[1A[3G[Jdb.todos.insertOne({text:"Increase the number of tools in my toolsbelt", done: fasle[7G[1A[3G[Jdb.todos.insertOne({text:"Increase the number of tools in my toolsbelt", done: fasl[6G[1A[3G[Jdb.todos.insertOne({text:"Increase the number of tools in my toolsbelt", done: fas[5G[1A[3G[Jdb.todos.insertOne({text:"Increase the number of tools in my toolsbelt", done: fa[4G[1A[3G[Jdb.todos.insertOne({text:"Increase the number of tools in my toolsbelt", done: fal[5G[1A[3G[Jdb.todos.insertOne({text:"Increase the number of tools in my toolsbelt", done: fals[6G[1A[3G[Jdb.todos.insertOne({text:"Increase the number of tools in my toolsbelt", done: false[7G[1A[3G[Jdb.todos.insertOne({text:"Increase the number of tools in my toolsbelt", done: false}[8G[1A[3G[Jdb.todos.insertOne({text:"Increase the number of tools in my toolsbelt", done: false})[9G[1A[3G[Jdb.todos.insertOne({text:"Increase the number of tools in my toolsbelt", done: false})[9G
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("62150b2271fb5d35e1a14815")
+}
+> [3G[Jdb.todos.insertOne({text:"Increase the number of tools in my toolsbelt", done: false})[9G[1A[3G[Jdb.todos.find({})[20G[3G[Jdb.todos.find({})[20G
+{ "_id" : ObjectId("6214dca0be8c3b52c4a69e80"), "text" : "upda2tetest", "done" : false }
+{ "_id" : ObjectId("6214dca0be8c3b52c4a69e81"), "text" : "Learn about containers", "done" : false }
+{ "_id" : ObjectId("62150b2271fb5d35e1a14815"), "text" : "Increase the number of tools in my toolsbelt", "done" : false }
+> exit[3G[Jexit[7G
+bye
+]0;root@7f547bfa825d: /root@7f547bfa825d:/# exit
+exit
+]0;ollita@DESKTOP-G80022C: ~/code_projects/docker-exercises/part12-containers-applications/todo-app/todo-backend[01;32mollita@DESKTOP-G80022C[00m:[01;34m~/code_projects/docker-exercises/part12-containers-applications/todo-app/todo-backend[00m$ exit
+exit
+
+Script done on 2022-02-22 18:11:49+02:00 [COMMAND_EXIT_CODE="0"]
