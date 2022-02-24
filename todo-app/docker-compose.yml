@@ -3,31 +3,29 @@ services:
   nginx:
     image: nginx:1.20.1
     volumes:
-      - ./nginx_dev.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx_prod.conf:/etc/nginx/nginx.conf:ro
     ports:
       - 8080:80
     container_name: reverse-proxy
   
 
   app:
-    image: todo-front-dev
+    image: todo-front
     build:
-      context: . 
-      dockerfile: /todo-frontend/dev.Dockerfile
+      context: ./todo-frontend/ 
+      dockerfile: Dockerfile
     volumes:
       - ./todo-frontend/:/usr/src/app
-    #ports:
-    #  - 3000:3000
     environment:
       - REACT_APP_BACKEND_URL=api/
-    container_name: todo-front-dev
+    container_name: todo-front
 
 
   server:
-    image: to-do-backend-dev
+    image: todo-back
     build:
-      context: . 
-      dockerfile: /todo-backend/dev.Dockerfile
+      context: ./todo-backend/ 
+      dockerfile: Dockerfile
     volumes:
       - ./todo-backend/:/usr/src/app
     #ports:
@@ -35,7 +33,7 @@ services:
     environment: 
       - MONGO_URL=mongodb://the_username:the_password@mongo:27017/the_database
       - REDIS_URL=redis://redis:6379
-    container_name: to-do-backend-dev
+    container_name: todo-back
   
   mongo:
     image: mongo
